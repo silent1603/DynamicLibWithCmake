@@ -10,5 +10,6 @@ add_executable(Main app.cpp)
 add_subdirectory(libSample)
 target_include_directories(Main PRIVATE ${PROJECT_SOURCE_DIR}/libSample)
 target_link_directories(Main PRIVATE "${BIN_PATH}/bin/")
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Main)
 
 
