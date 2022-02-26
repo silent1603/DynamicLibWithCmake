@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+bin
+build
+libSample/shared_EXPORTS.h
